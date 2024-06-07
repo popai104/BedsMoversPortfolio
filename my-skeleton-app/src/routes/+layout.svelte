@@ -11,11 +11,21 @@
 
 <!-- App Shell -->
 <AppShell>
-	<svelte:fragment slot="header">
-		<Header />
-	</svelte:fragment>	
+	<Header />
 	<slot />
-	<svelte:fragment slot="footer">
-		<Footer />
-	</svelte:fragment>
+	<Footer />
 </AppShell>
+
+<style>
+    :global(#app-shell) {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    :global(#app-shell > *) {
+        flex-shrink: 0;
+    }
+    :global(#main-content) {
+        flex-grow: 1;
+    }
+</style>

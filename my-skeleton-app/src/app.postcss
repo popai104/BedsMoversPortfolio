@@ -7,3 +7,9 @@ html,
 body {
 	@apply h-full overflow-hidden;
 }
+
+.bg-dark-blurred {
+	background-color: rgba(1,1,1, 0.4);
+	z-index: 999;
+	@apply backdrop-filter backdrop-blur-xl bg-opacity-50;
+}
