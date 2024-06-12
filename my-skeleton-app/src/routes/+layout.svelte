@@ -10,11 +10,13 @@
 </script>
 
 <!-- App Shell -->
-<AppShell>
-	<Header />
-	<slot />
-	<Footer />
-</AppShell>
+<main>
+    <AppShell>
+        <Header />
+        <slot />
+        <Footer />
+    </AppShell>    
+</main>
 
 <style>
     :global(#app-shell) {
@@ -22,10 +24,14 @@
         flex-direction: column;
         min-height: 100vh;
     }
-    :global(#app-shell > *) {
+        :global(#app-shell > *) {
         flex-shrink: 0;
     }
     :global(#main-content) {
         flex-grow: 1;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
     }
 </style>
