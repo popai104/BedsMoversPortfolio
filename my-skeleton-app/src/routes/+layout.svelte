@@ -11,11 +11,9 @@
 
 <!-- App Shell -->
 <main>
-    <AppShell>
-        <Header />
-        <slot />
-        <Footer />
-    </AppShell>    
+    <Header />
+    <slot />
+    <Footer />
 </main>
 
 <style>
@@ -29,9 +27,5 @@
     }
     :global(#main-content) {
         flex-grow: 1;
-    }
-    main {
-        display: flex;
-        flex-direction: column;
     }
 </style>
