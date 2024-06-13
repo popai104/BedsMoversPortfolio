@@ -55,7 +55,7 @@
         width: 100%;
         opacity: 1;
         min-height: 100px;
-        padding: 10px 50px;
+        padding: 10px 0px;
         padding-top: 50px;
         display: flex;
         justify-content: center;
