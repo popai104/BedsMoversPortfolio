@@ -31,8 +31,15 @@
         <!-- content divider line-->
         <div class="border-t-2 border-surface-white opacity-35 mt-5 pb-5"></div>
         <!-- content -->
-        <h1>Side Panel Content</h1>
-        <p>This is the content of the side panel.</p>
+        <div class="flex flex-col">
+            <div class="flex flex-col space-y-2">
+                <button class="btn btn-sm variant-soft-tertiary">Home</button>
+                <button class="btn btn-sm variant-soft-tertiary">About us</button>
+                <button class="btn btn-sm variant-soft-tertiary">Projects</button>
+                <button class="btn btn-sm variant-soft-tertiary">Contacts</button>
+                <button class="btn btn-sm variant-soft-tertiary">Move 'em beds!</button>
+            </div>
+        </div>
         <!-- bottom section -->
         <div class="bottom-section">
             <div class="border-t-2 border-surface-white opacity-35 mt-5 mx-6"></div>
