@@ -65,7 +65,7 @@
             </svelte:fragment>
             <svelte:fragment slot="trail">
                 <!--TODO: burger menu :D-->
-
+                <div class="md:hidden"><BurgerMenu /></div>
                 <!--Language selection dropdown-->
                 <div class="hidden md:flex">
                     <button class="btn btn-sm variant-ghost-tertiary justify-between" use:popup={popupCombobox}>
@@ -91,18 +91,11 @@
 </main>
 
 <style type="postcss">
-    .header {
-        z-index: 10;
-    }
     .fixed-div {
         position: fixed;
         top: 0;
         right: 0;
         margin-top: 16px;
         margin-right: 16px;
-        padding: 8px;
-        background-color: #1e40af; /* Tailwind blue-500 */
-        color: white;
-        border-radius: 4px;
     }
 </style>

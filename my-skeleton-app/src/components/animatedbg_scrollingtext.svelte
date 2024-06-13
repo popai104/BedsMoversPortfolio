@@ -49,6 +49,7 @@
         padding: 0;
         font-family: $font1;
         overflow: visible;
+        z-index: -1;
     }
     
     
