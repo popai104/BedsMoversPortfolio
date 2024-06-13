@@ -8,7 +8,6 @@
     
     let comboboxValue: string;
     let isHeaderVisible = true;
-    let headerElement: HTMLElement | null = null;
     let headerContainer: HTMLDivElement | null = null;
     
     const popupCombobox: PopupSettings = {
