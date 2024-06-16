@@ -1,5 +1,10 @@
 <script>
-    import { onMount, onDestroy } from 'svelte';
+    import { onMount, onDestroy, afterUpdate } from 'svelte';
+
+    export let highlightColor = 0x0;
+    export let midtoneColor = 0xb400ff;
+    export let lowlightColor = 0x0;
+    export let baseColor = 0x0;
 
     let fogEffect;
     let vantaContainer;
@@ -24,10 +29,10 @@
                         gyroControls: false,
                         minHeight: 200.00,
                         minWidth: 200.00,
-                        highlightColor: 0x0,
-                        midtoneColor: 0xb400ff,
-                        lowlightColor: 0x0,
-                        baseColor: 0x0,
+                        highlightColor,
+                        midtoneColor,
+                        lowlightColor,
+                        baseColor,
                         blurFactor: 0.65,
                         speed: 1.00,
                         zoom: 1.20
@@ -37,6 +42,17 @@
         };
 
         loadScripts();
+    });
+
+    afterUpdate(() => {
+        if (fogEffect) {
+            fogEffect.setOptions({
+                highlightColor,
+                midtoneColor,
+                lowlightColor,
+                baseColor
+            });
+        }
     });
 
     onDestroy(() => {

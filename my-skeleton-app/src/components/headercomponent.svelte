@@ -55,7 +55,7 @@
         </svelte:fragment>
         <svelte:fragment slot="default">
         <div class="hidden md:flex space-x-2">
-            <button class="btn btn-sm variant-ghost-tertiary">Home</button>
+            <button class="btn btn-sm variant-ghost-tertiary" on:click={() => window.location.href = '/'}>Home</button>
             <button class="btn btn-sm variant-soft-primary" on:click={() => window.location.href = '/about_us'}>About us</button>
             <button class="btn btn-sm variant-soft-primary" on:click={() => window.location.href = '/projects'}>Projects</button>
             <button class="btn btn-sm variant-soft-primary">Contacts</button>

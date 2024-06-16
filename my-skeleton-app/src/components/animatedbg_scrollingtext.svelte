@@ -4,9 +4,9 @@
     export let word3 = "REPEAT";
 </script>
 
-<div class="overflow-hidden fixed top-0 left-0 w-screen h-screen flex justify-center items-center">
+<div class="overflow-hidden fixed top-0 left-0 w-screen h-screen flex justify-center items-center bg-black">
     <div class="space-y-10 text-center flex flex-col items-center overflow-hidden">
-        <div class="container blur-sm opacity-5 overflow-hidden" id="code-sleep-repeat-textanimation">
+        <div class="container blur-sm opacity-15 overflow-hidden" id="code-sleep-repeat-textanimation">
             <div class="box overflow-hidden">
                 {#each Array.from({ length: 16 }, (_, i) => i + 1) as i}
                     <span style="--i: {i}">

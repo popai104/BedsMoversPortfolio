@@ -17,15 +17,9 @@
 </main>
 
 <style>
-    :global(#app-shell) {
+    main {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-    }
-        :global(#app-shell > *) {
-        flex-shrink: 0;
-    }
-    :global(#main-content) {
-        flex-grow: 1;
     }
 </style>

@@ -6,16 +6,14 @@
 
 <div class="container h-full mx-auto flex justify-center items-center flex-col p-6">
 	<Background />
-	<div class="md:w-4/6 mr-auto pb-20 pt-20">
+	<div class="md:w-4/6 mr-auto padding">
 		<Text />
-	</div>
-	<div class="fixed top-perc right-1/4">
-		<Fire />
 	</div>
 </div>
 
 <style>
-	.top-perc {
-		top: calc(35% - 7vw);
+	.padding {
+		padding-top: calc(2vw + 1vh);
+		padding-bottom: calc(3vw + 1vh);
 	}
 </style>

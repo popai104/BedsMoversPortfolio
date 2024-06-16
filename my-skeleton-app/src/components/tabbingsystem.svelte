@@ -51,24 +51,36 @@
     }
 
     .tab-button.selected1 {
-        background: rgba(218, 59, 59, 0.3);
+        background: rgba(218, 59, 59, 0.6);
     }
     .tab-button.selected2 {
-        background: rgba(132, 5, 170, 0.3);
+        background: rgba(132, 5, 170, 0.6);
     }
     .tab-button.selected3 {
-        background: rgba(12, 241, 12, 0.3);
+        background: rgba(63, 192, 51, 0.6);
     }
 
     .tab-button:hover {
         filter: brightness(1.1);
+    }
+
+    .btt1 {
+        background: rgba(218, 59, 59, 0.2);
+    }
+
+    .btt2 {
+        background: rgba(132, 5, 170, 0.2);
+    }
+
+    .btt3 {
+        background: rgba(12, 241, 12, 0.2);
     }
 </style>
 
 <div class="tabs-container">
     <div class="row">
         <button
-            class="tab-button {selectedTab === 1 ? 'selected1' : ''}"
+            class="tab-button btt1 {selectedTab === 1 ? 'selected1' : ''}"
             on:click={() => selectTab(1)}
             style="{selectedTab === 1 ? $selectedStyle : ''}"
         >
@@ -77,14 +89,14 @@
     </div>
     <div class="row">
         <button
-            class="tab-button {selectedTab === 2 ? 'selected2' : ''}"
+            class="tab-button btt2 {selectedTab === 2 ? 'selected2' : ''}"
             on:click={() => selectTab(2)}
             style="{selectedTab === 2 ? $selectedStyle : ''}"
         >
             {tabs[1]}
         </button>
         <button
-            class="tab-button {selectedTab === 3 ? 'selected3' : ''}"
+            class="tab-button btt3 {selectedTab === 3 ? 'selected3' : ''}"
             on:click={() => selectTab(3)}
             style="{selectedTab === 3 ? $selectedStyle : ''}"
         >
