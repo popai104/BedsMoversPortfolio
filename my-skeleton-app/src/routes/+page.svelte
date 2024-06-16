@@ -1,5 +1,4 @@
 <script>
-	import { fade, slide } from "svelte/transition";
     import Background from "../components/animatedbg_scrollingtext.svelte";
 	import Text from "../components/Typewritertext.svelte";
 	import Fire from "../components/burningfire.svelte";
@@ -13,10 +12,6 @@
 	<div class="fixed top-perc right-1/4">
 		<Fire />
 	</div>
-	
-
-
-	
 </div>
 
 <style>
