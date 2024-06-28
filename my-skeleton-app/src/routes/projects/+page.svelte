@@ -1,9 +1,8 @@
 <script>
-  import ProjectCards from '$lib/components/ProjectCards.svelte';
+  import ProjectCards from '../../components/ProjectCards.svelte';
 </script>
 
 <main>
-  <h1>I miei progetti</h1>
   <ProjectCards />
 </main>
 
