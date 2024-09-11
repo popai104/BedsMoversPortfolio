@@ -20,27 +20,24 @@
 
 <style>
 
-  .grid-container {
-  align-content: center;
-  align-items: center;
+.grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 10px;
-  padding: 8px;
+  gap: 16px;
+  justify-content: center; 
+  padding: 8px; 
 }
 
-  .card {
-    align-content: center;
-    align-items: center;
-    background-color: #340f1b;
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    overflow: hidden;
-    width: 300px;
-    margin: 16px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-
-  }
+.card {
+  background-color: #340f1b;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%; 
+  max-width: 300px; 
+  margin: 0 auto; 
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
   .card-image-container {
     position: relative;
   }
