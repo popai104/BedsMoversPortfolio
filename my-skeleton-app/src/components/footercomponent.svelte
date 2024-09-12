@@ -1,23 +1,24 @@
 <script>
-    import { onMount } from 'svelte';
-    import '../app.postcss';
-    import { AppBar } from '@skeletonlabs/skeleton';
+    import { onMount } from "svelte";
+    import "../app.postcss";
 
     onMount(() => {
-        const ionicons = document.createElement('script');
-        ionicons.type = 'module';
-        ionicons.src = 'https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js';
+        const ionicons = document.createElement("script");
+        ionicons.type = "module";
+        ionicons.src =
+            "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js";
         document.head.appendChild(ionicons);
 
-        const ioniconsNoModule = document.createElement('script');
-        ioniconsNoModule.setAttribute('nomodule', '');
-        ioniconsNoModule.src = 'https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js';
+        const ioniconsNoModule = document.createElement("script");
+        ioniconsNoModule.setAttribute("nomodule", "");
+        ioniconsNoModule.src =
+            "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js";
         document.head.appendChild(ioniconsNoModule);
     });
 </script>
 
 <main>
-    <div class="footer">
+    <div class="footer mt-auto">
         <ul class="social-icon">
             <li class="social-icon__item">
                 <a class="social-icon__link" href="#top">
@@ -37,7 +38,6 @@
         </ul>
         <p>&copy;2024 BedsMovers | All Rights Reserved</p>
     </div>
-
 </main>
 
 <style type="postcss">

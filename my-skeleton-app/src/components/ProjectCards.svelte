@@ -15,7 +15,7 @@
   ];
 </script>
 
-<div class="project-cards">
+<div class="project-cards justify-center">
   {#each projects as project}
     <Card title={project.title} description={project.description} imageUrl={project.imageUrl} />
   {/each}
